@@ -15,4 +15,4 @@ admin.site.register(Language)
 
 @register(BookInstance)
 class AdminBookInstance(admin.ModelAdmin):
-    list_display = ('display_book', 'status', 'due_back')
+    list_display = ('display_book', 'borrower', 'status', 'due_back')
